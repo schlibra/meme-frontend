@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@element-plus/icons-vue": "^2.3.1",
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
+    "@vueuse/core": "^10.11.0",
+    "axios": "^1.7.2",
+    "crypto-js": "^4.2.0",
+    "disable-devtool": "^0.3.7",
+    "element-plus": "^2.7.6",
+    "lodash-es": "^4.17.21",
+    "md5": "^2.3.0",
+    "pinia": "^2.2.0",
+    "popmotion": "^11.0.5",
+    "sass": "^1.77.6",
+    "scss": "^0.2.4",
+    "typed.js": "^2.1.0",
+    "vue": "^3.4.29",
+    "vue-kinesis": "^2.0.5",
+    "vue-rough-notation": "^1.0.4",
+    "vue-router": "^4.3.3",
+    "vue3-cookies": "^1.0.6",
+    "vue3typed": "^0.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "vite": "^5.3.1",
+    "vite-plugin-vue-devtools": "^7.3.1"
+  }
+}

@@ -1,0 +1,15 @@
+export default interface Picture {
+    picId?: number,
+    name?: string,
+    description?: string,
+    userId?: number,
+    data?: string,
+    compressed?: string,
+    compressType?: string,
+    type?: string,
+    verified?: string,
+    create?: string,
+    update?: string,
+    delete?: string,
+    url?: string,
+}

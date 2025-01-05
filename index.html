@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{$siteLogo}">
+    <meta name="baseurl" />
+  </head>
+  <body style="margin: 0;">
+    <div id="app"></div>
+    <script>
+        const VARS = {
+            thirdPartyLoginUsername: "{$thirdPartyLoginUsername}",
+            thirdPartyLoginNickname: "{$thirdPartyLoginNickname}",
+            thirdPartyLoginToken: "{$thirdPartyLoginToken}",
+            thirdPartyLoginError: "{$thirdPartyLoginError}",
+            siteName: "{$siteName}",
+            siteLogo: "{$siteLogo}",
+            language: "{$language}",
+            enableHomeTyping: "{$enableHomeTyping}",
+            enableGravatarCDN: "{$enableGravatarCDN}",
+            gravatarCDNAddress: "{$gravatarCDNAddress}",
+            enablePicCompress: "{$enablePicCompress}",
+            picCompressType: "{$picCompressType}",
+            enablePictureVerify: "{$enablePictureVerify}",
+            enableCommentVerify: "{$enableCommentVerify}",
+            enableCaptcha: "{$enableCaptcha}",
+            enableUserLog: "{$enableUserLog}",
+            enableAdminLog: "{$enableAdminLog}",
+            enableEmail: "{$enableEmail}",
+            smtpHost: "{$smtpHost}",
+            smtpPort: "{$smtpPort}",
+            smtpUsername: "{$smtpUsername}",
+            smtpPassword: "{$smtpPassword}",
+            smtpEncrypt: "{$smtpEncrypt}",
+            enableSckur: "{$enableSckur}",
+            sckurApiKey: "{$sckurApiKey}",
+            sckurClientId: "{$sckurClientId}",
+            enableGitee: "{$enableGitee}",
+            giteeClientId: "{$giteeClientId}",
+            giteeClientSecret: "{$giteeClientSecret}",
+            enableGithub: "{$enableGithub}",
+            githubClientId: "{$githubClientId}",
+            githubClientSecret: "{$githubClientSecret}",
+            enableGitlab: "{$enableGitlab}",
+            gitlabClientId: "{$gitlabClientId}",
+            gitlabClientSecret: "{$gitlabClientSecret}",
+            enableMicrosoft: "{$enableMicrosoft}",
+            microsoftClientId: "{$microsoftClientId}",
+            microsoftClientSecret: "{$microsoftClientSecret}",
+            languageData: "{$languageData}",
+        }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

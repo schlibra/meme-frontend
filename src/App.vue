@@ -4,11 +4,9 @@ import { useCookies } from "vue3-cookies";
 const {cookies} = useCookies()
 import DisableDevtool from 'disable-devtool'
 import {alertError} from "@/lib/requestAlert.js";
-DisableDevtool({
-  ignore() {
-    return cookies.get("dev") === "Y"
-  }
-})
+if (cookies.get("dev") !== "Y") {
+  DisableDevtool()
+}
 globalThis.dev = () => {
   if (cookies.get("dev") === "Y") {
     cookies.remove("dev")

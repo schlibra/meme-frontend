@@ -20,6 +20,7 @@ import NotFoundPage from "@/views/NotFoundPage.vue";
 import CallbackView from "@/views/Account/CallbackView.vue";
 import UserBind from "@/views/User/UserBind.vue";
 import AdminPicture from "@/views/Admin/AdminPicture.vue";
+import AdminDeveloper from "@/views/Admin/AdminDeveloper.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,7 +29,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-      meta: { title: ["IURT memes 2.0", "Home Title"][0] }
+      meta: { title: ["Site Name 2.0", "Home Title"][0] }
     },
     {
       path: "/login",
@@ -145,6 +146,12 @@ const router = createRouter({
       name: "adminBackup",
       component: AdminBackup,
       meta: { title: "后台管理中心 - 备份与恢复" }
+    },
+    {
+      path: "/admin/developer",
+      name: "adminDeveloper",
+      component: AdminDeveloper,
+      meta: { title: "后台管理中心 - 开发者设置" }
     },
     {
       path: "/api/login/callback/sckur",

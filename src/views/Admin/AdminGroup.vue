@@ -277,9 +277,6 @@ function isDefaultFilter(value, row) {
           <el-input v-model="createGroupName" />
         </el-form-item>
         <el-space wrap :size="24">
-          <el-form-item label="是否管理员">
-            <el-switch active-text="开启" inactive-text="关闭" v-model="createAdmin" />
-          </el-form-item>
           <el-form-item label="上传图片">
             <el-switch active-text="开启" inactive-text="关闭" v-model="createUploadPic" />
           </el-form-item>
@@ -316,6 +313,9 @@ function isDefaultFilter(value, row) {
           <el-form-item label="还原评分">
             <el-switch active-text="开启" inactive-text="关闭" v-model="createRestoreScore" />
           </el-form-item>
+          <el-form-item label="是否管理员">
+            <el-switch active-text="开启" inactive-text="关闭" v-model="createAdmin" />
+          </el-form-item>
         </el-space>
       </el-form>
     </template>
@@ -337,9 +337,6 @@ function isDefaultFilter(value, row) {
           <el-input v-model="updateGroupName" />
         </el-form-item>
         <el-space wrap :size="24">
-          <el-form-item label="是否管理员">
-            <el-switch active-text="开启" inactive-text="关闭" v-model="updateAdmin" />
-          </el-form-item>
           <el-form-item label="上传图片">
             <el-switch active-text="开启" inactive-text="关闭" v-model="updateUploadPic" />
           </el-form-item>
@@ -375,6 +372,9 @@ function isDefaultFilter(value, row) {
           </el-form-item>
           <el-form-item label="还原评分">
             <el-switch active-text="开启" inactive-text="关闭" v-model="updateRestoreScore" />
+          </el-form-item>
+          <el-form-item label="是否管理员">
+            <el-switch active-text="开启" inactive-text="关闭" v-model="updateAdmin" />
           </el-form-item>
         </el-space>
       </el-form>

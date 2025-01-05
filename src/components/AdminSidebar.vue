@@ -9,7 +9,7 @@ import {
   Key,
   Lock, Memo,
   Star,
-  Setting, User, UploadFilled
+  Setting, User, UploadFilled, Cpu
 } from "@element-plus/icons-vue";
 import {onMounted, ref} from "vue";
 import displayUtil from "@/lib/displayUtil.js";
@@ -48,6 +48,9 @@ function gotoScore() {
 }
 function gotoBackup() {
   router.push("/admin/backup")
+}
+function gotoDeveloper() {
+  router.push("/admin/developer")
 }
 </script>
 
@@ -106,11 +109,15 @@ function gotoBackup() {
         <el-icon><Memo /></el-icon>
         <span>管理员日志</span>
       </el-menu-item>
-      <el-menu-item index="13" @click="gotoBackup">
+      <el-menu-item index="13" @click="gotoDeveloper">
+        <el-icon><Cpu /></el-icon>
+        <span>开发者选项</span>
+      </el-menu-item>
+      <el-menu-item index="14" @click="gotoBackup">
         <el-icon><Coin /></el-icon>
         <span>备份与恢复</span>
       </el-menu-item>
-      <el-menu-item index="14">
+      <el-menu-item index="15">
         <el-icon><UploadFilled /></el-icon>
         <span>站点升级</span>
       </el-menu-item>
